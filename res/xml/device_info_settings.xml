@@ -118,6 +118,12 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
 
+        <!-- Tesla firmware version -->
+        <Preference android:key="tesla_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/tesla_version_title"
+                android:summary="@string/tesla_version_default"/>
+
         <!-- Device Kernel version -->
         <com.android.settings.DividerPreference
                 android:key="kernel_version"
