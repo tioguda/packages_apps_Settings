@@ -32,6 +32,9 @@
     <string name="profiles_add">Add...</string>
     <string name="profile_choose_app">Choose app</string>
 
+    <!-- TeslaOTA -->
+    <string name="slimota_title">Tesla Updates</string>
+
     <!-- About phone screen, Tesla version -->
     <string name="tesla_version_title">Tesla version</string>
     <string name="tesla_version_default">Unknown</string>
