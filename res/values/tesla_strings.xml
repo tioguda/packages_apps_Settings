@@ -26,7 +26,7 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
-    <!-- Volume settings - Volume adjustment sound -->
+    <!-- Volume adjustment sounds -->
     <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 
     <!-- Density category -->
@@ -57,6 +57,17 @@
     <string name="volume_steps_15">15</string>
     <string name="volume_steps_7">7</string>
     <string name="volume_steps_5">5</string>
+
+    <!-- Dashboard options -->
+    <string name="dashboard_category">Dashboard options</string>
+    <string name="dashboard_suggestions_title">Dashboard suggestions</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
+    <string name="remove_tile_summaries_title">Remove tile summaries</string>
+    <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
+    <string name="dashboard_conditions_title">Dashboard conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
 
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
