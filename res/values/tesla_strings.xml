@@ -15,6 +15,7 @@
     <!-- TeslaCoil -->
     <string name="teslacoil_title">TeslaCoil</string>
     <string name="header_category_teslacoil">Extra Options</string>
+    <string name="teslacoil_summary">Custom options for Tesla</string>
 
     <!-- About phone screen, Tesla version -->
     <string name="tesla_version_title">Tesla version</string>

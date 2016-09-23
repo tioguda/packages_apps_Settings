@@ -942,6 +942,7 @@
         <activity android:name="Settings$TeslaCoilActivity"
             android:label="@string/teslacoil_title"
             android:icon="@drawable/ic_settings_teslacoil"
+            android:summary="@string/teslacoil_summary"
             android:taskAffinity="">
             <intent-filter android:priority="1">
                 <action android:name="gzr.teslacoil.TeslaCoil" />
