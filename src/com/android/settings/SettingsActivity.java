@@ -361,6 +361,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName()
             TeslaCoil.class.getName(),
+            LightsSettings.class.getName(),
     };
 
 
