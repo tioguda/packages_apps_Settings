@@ -135,6 +135,10 @@ import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
 import com.gzr.teslacoil.TeslaCoil;
+import com.gzr.teslacoil.fragments.FlingSettings;
+import com.gzr.teslacoil.fragments.NavbarSettings;
+import com.gzr.teslacoil.fragments.SmartbarSettings;
+import com.gzr.teslacoil.fragments.PulseSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -362,6 +366,10 @@ public class SettingsActivity extends SettingsDrawerActivity
             AutomaticStorageManagerSettings.class.getName()
             TeslaCoil.class.getName(),
             LightsSettings.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
     };
 
 
