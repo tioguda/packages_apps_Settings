@@ -14,24 +14,31 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.ListPreference;
-import android.preference.Preference;
-import android.preference.PreferenceGroup;
-import android.preference.PreferenceScreen;
-import android.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceGroup;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceGroupAdapter;
+import android.support.v7.preference.PreferenceViewHolder;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
-import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
+import android.os.UserHandle;
+import java.util.regex.Matcher;
+import com.android.settings.InstrumentedFragment;
 
 import com.android.internal.logging.MetricsLogger;
 import java.util.Date;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import java.util.regex.Pattern;
+import android.util.Log;
 
 public class TeslaAbout extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 		
 	private static final String KEY_SLIM_OTA = "slimota";
+        private static final String LOG_TAG = "TeslaAbout";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,8 +64,8 @@ public class TeslaAbout extends SettingsPreferenceFragment implements
 	return false;
 	}
 
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    public boolean onPreferenceTreeClick(Preference preference) {
+        return super.onPreferenceTreeClick(preference);
     }
     
     private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
