@@ -68,7 +68,9 @@
 	    <Preference
 		android:title="Anthony (Yayo)"
 		android:summary="GzR slacker and #BlameAnt guy" />
-
+	    <Preference
+                android:title="Adam Ovadia (oadam11)"
+                android:summary="Breaks more stuff than he fixes and #LGpls" />
         </PreferenceCategory>
 
 </PreferenceScreen>
