@@ -51,7 +51,12 @@
 
 	    <Preference
 	        android:title="John Brewer (TheRingmaster)"
-		    android:summary="Tesla lead developer"/>
+		android:summary="GzR lead developer"/>
+
+	    <Preference
+	        android:title="Martin Coulon (martinusbe)"
+		android:summary="GzR resident drunk"/>
+
 	    </PreferenceCategory>
 
 </PreferenceScreen>
