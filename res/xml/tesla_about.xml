@@ -61,6 +61,10 @@
                 android:title="Char (Char_G)"
                 android:summary="GzR public relations" />
 
+            <Preference
+                android:title="Prema Chand Alugu (premaca)"
+                android:summary="GzR apprentice to resident drunk" />
+
         </PreferenceCategory>
 
 </PreferenceScreen>
