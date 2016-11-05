@@ -67,7 +67,7 @@
 	     
 	    <Preference
 		android:title="Anthony (Yayo)"
-		android:summary="GzR slacker and blame #BlameAnt guy" />
+		android:summary="GzR slacker and #BlameAnt guy" />
 
         </PreferenceCategory>
 
