@@ -45,18 +45,22 @@
 	</PreferenceScreen>
 
 		<!-- Developers -->
-	    <PreferenceCategory
-	        android:key="category_tesla_developers"
-	        android:title="Developers">
+        <PreferenceCategory
+            android:key="category_tesla_developers"
+            android:title="Developers">
 
-	    <Preference
-	        android:title="John Brewer (TheRingmaster)"
-		android:summary="GzR lead developer"/>
+            <Preference
+                android:title="John Brewer (TheRingmaster)"
+                android:summary="GzR lead developer" />
 
-	    <Preference
-	        android:title="Martin Coulon (martinusbe)"
-		android:summary="GzR resident drunk"/>
+            <Preference
+                android:title="Martin Coulon (martinusbe)"
+                android:summary="GzR resident drunk" />
 
-	    </PreferenceCategory>
+            <Preference
+                android:title="Char (Char_G)"
+                android:summary="GzR public relations" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>
