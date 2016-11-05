@@ -64,6 +64,10 @@
             <Preference
                 android:title="Prema Chand Alugu (premaca)"
                 android:summary="GzR apprentice to resident drunk" />
+	     
+	    <Preference
+		android:title="Anthony (Yayo)"
+		android:summary="GzR slacker and blame #BlameAnt guy" />
 
         </PreferenceCategory>
 
