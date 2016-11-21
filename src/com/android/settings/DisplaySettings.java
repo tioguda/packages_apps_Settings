@@ -30,6 +30,7 @@ import android.content.res.Resources;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Build;
+import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.os.UserHandle;
@@ -41,6 +42,8 @@ import android.support.v7.preference.DropDownPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -95,6 +98,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_CAMERA_GESTURE = "camera_gesture";
     private static final String KEY_WALLPAPER = "wallpaper";
     private static final String KEY_VR_DISPLAY_PREF = "vr_display_pref";
+    private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
 
     private static final String DASHBOARD_PORTRAIT_COLUMNS = "dashboard_portrait_columns";
     private static final String DASHBOARD_LANDSCAPE_COLUMNS = "dashboard_landscape_columns";
@@ -102,6 +106,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mDashboardPortraitColumns;
     private CustomSeekBarPreference mDashboardLandscapeColumns;
 
+    private PreferenceCategory mWakeUpOptions;
     private ListPreference mNightModePreference;
 
     private Preference mFontSizePref;
@@ -114,6 +119,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraGesturePreference;
 
     private TimeoutListPreference mScreenTimeoutPreference;
+    private SwitchPreference mProximityCheckOnWakePreference;
 
     @Override
     protected int getMetricsCategory() {
@@ -127,6 +133,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = activity.getContentResolver();
 
         addPreferencesFromResource(R.xml.display_settings);
+
+	PreferenceScreen prefSet = getPreferenceScreen();
 
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
@@ -271,6 +279,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             final int currentNightMode = uiManager.getNightMode();
             mNightModePreference.setValue(String.valueOf(currentNightMode));
             mNightModePreference.setOnPreferenceChangeListener(this);
+        }
+
+        mProximityCheckOnWakePreference = (SwitchPreference) findPreference(KEY_PROXIMITY_WAKE);
+        boolean proximityCheckOnWake = getResources().getBoolean(
+                com.android.internal.R.bool.config_proximityCheckOnWake);
+        if (!proximityCheckOnWake) {
+            if (mProximityCheckOnWakePreference != null) {
+                mWakeUpOptions.removePreference(mProximityCheckOnWakePreference);
+            }
+            Settings.System.putInt(resolver, Settings.System.PROXIMITY_ON_WAKE, 0);
         }
     }
 
