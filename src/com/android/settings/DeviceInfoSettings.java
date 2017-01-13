@@ -70,6 +70,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SLIM_OTA = "slimota";
+    private static final String KEY_FEATURE_LIST  = "feature-list";
 
     long[] mHits = new long[3];
 

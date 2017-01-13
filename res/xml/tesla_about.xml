@@ -30,7 +30,16 @@
         <PreferenceScreen 
          	android:key="translator"
          	android:title="@string/changelog_tesla_title"
-         	android:fragment="com.android.settings.tesla.Changelog" />    
+         	android:fragment="com.android.settings.tesla.Changelog" />
+
+        <!-- Feature-List -->
+        <PreferenceScreen
+               android:key="feature-list"
+               android:title="Features at-a-glance">
+               <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://raw.githubusercontent.com/TeslaRom-N/Feature-List/master/README.md" />
+        </PreferenceScreen> 
 
 	<PreferenceScreen android:title="Google+">
 	    <intent
