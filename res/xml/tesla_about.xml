@@ -77,10 +77,15 @@
 	    <Preference
 		android:title="Anthony (Yayo)"
 		android:summary="GzR slacker and #BlameAnt guy" />
+		
 	    <Preference
                 android:title="Adam Ovadia (oadam11)"
                 android:summary="GzR LG fanboy and beginner drunk" />
-	     
+		
+	    <Preference
+                android:title="Nick van Bokhorst (GtrCraft)"
+                android:summary="GzR Magician and never drunk" />
+		
 	    <Preference
 		android:title="Psy After"
 		android:summary="S5-mini (g800f) maintainer" />
