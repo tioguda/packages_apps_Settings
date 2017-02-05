@@ -89,6 +89,10 @@
 	    <Preference
 		android:title="Psy After"
 		android:summary="S5-mini (g800f) maintainer" />
+
+            <Preference
+                android:title="Shivam Desai (Flashhhh)"
+                android:summary="Just Another GZR Guy" />
         </PreferenceCategory>
 
 </PreferenceScreen>
