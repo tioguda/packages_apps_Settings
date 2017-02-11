@@ -368,4 +368,7 @@
     <string name="qs_night_bright_medium">Set medium brightness</string>
     <string name="qs_night_bright_min">Set minimum brightness</string>
 
+    <!-- Magisk Manager -->
+    <string name="magisk_title">Magisk Manager</string>
+    <string name="magisk_summary">Root management</string>
 </resources>
