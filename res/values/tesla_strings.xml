@@ -371,4 +371,8 @@
     <!-- Magisk Manager -->
     <string name="magisk_title">Magisk Manager</string>
     <string name="magisk_summary">Root management</string>
+
+    <!-- IME Switcher notify -->
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 </resources>
