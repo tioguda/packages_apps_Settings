@@ -136,6 +136,7 @@ import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
 import com.gzr.teslacoil.TeslaCoil;
+import com.gzr.teslacoil.fragments.ExpandedDesktop;
 import com.gzr.teslacoil.fragments.FlingSettings;
 import com.gzr.teslacoil.fragments.NavbarSettings;
 import com.gzr.teslacoil.fragments.SmartbarSettings;
@@ -377,6 +378,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName()
             TeslaCoil.class.getName(),
+            ExpandedDesktop.class.getName(),
             LightsSettings.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),

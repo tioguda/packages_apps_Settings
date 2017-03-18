@@ -163,6 +163,7 @@ public class Settings extends SettingsActivity {
     public static class SystemSettings extends SettingsActivity { /* empty */ }
     public static class LightsSettingsActivity extends SettingsActivity { /* empty */ }
     public static class TeslaCoilActivity extends SettingsActivity { /* empty */ }
+    public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
     public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
