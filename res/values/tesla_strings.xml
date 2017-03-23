@@ -17,6 +17,9 @@
     <string name="header_category_teslacoil">Extra Options</string>
     <string name="teslacoil_summary">Custom options for Tesla</string>
 
+    <string name="ka_title">Kernel Adiutor</string>
+    <string name="ka_summary">Fine tune your device</string>
+
     <!-- General -->
     <string name="ok">Okay</string>
     <string name="reset">Reset</string>
