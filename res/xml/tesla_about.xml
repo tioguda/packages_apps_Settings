@@ -16,15 +16,15 @@
 	    android:title="About Tesla"
 	    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-	<!-- Tesla OTA -->
-	<PreferenceScreen
-	       android:key="slimota"
-	       android:title="@string/slimota_title" >
-	       <intent
-	           android:action="android.intent.action.MAIN"
-	           android:targetPackage="com.fusionjack.slimota"
-	           android:targetClass="com.fusionjack.slimota.MainActivity" />
-	</PreferenceScreen>
+        <!-- GZRomsApp -->
+        <PreferenceScreen
+               android:key="gzRomsApp"
+               android:title="@string/gzroms_app_title">
+               <intent
+                       android:action="android.intent.action.MAIN"
+                       android:targetPackage="com.jerrica.GZRoms"
+                       android:targetClass="com.jerrica.GZRoms.MainActivity" />
+        </PreferenceScreen>
 
 	<!-- Changelog -->
         <PreferenceScreen 

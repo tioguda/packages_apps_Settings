@@ -36,9 +36,9 @@ import android.util.Log;
 
 public class TeslaAbout extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
-		
-	private static final String KEY_SLIM_OTA = "slimota";
+
         private static final String LOG_TAG = "TeslaAbout";
+        private static final String KEY_GZROMS_APP = "gzRomsApp";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,11 +46,11 @@ public class TeslaAbout extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.tesla_about);
         
-        // Only the owner should see the Updater settings, if it exists
+        // Only the owner should see the GZRoms App settings, if it exists
         if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
-            removePreferenceIfPackageNotInstalled(findPreference(KEY_SLIM_OTA));
+            removePreferenceIfPackageNotInstalled(findPreference(KEY_GZROMS_APP));
         } else {
-            getPreferenceScreen().removePreference(findPreference(KEY_SLIM_OTA));
+            getPreferenceScreen().removePreference(findPreference(KEY_GZROMS_APP));
         }
     }
 

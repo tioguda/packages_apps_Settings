@@ -35,8 +35,8 @@
     <string name="profiles_add">Add...</string>
     <string name="profile_choose_app">Choose app</string>
 
-    <!-- TeslaOTA -->
-    <string name="slimota_title">Tesla Updates</string>
+    <!-- GZRomsApp -->
+    <string name="gzroms_app_title">Ground Zero Roms (Updates)</string>
 
     <!-- About phone screen, Tesla version -->
     <string name="tesla_version_title">Tesla version</string>
