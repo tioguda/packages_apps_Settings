@@ -39,6 +39,7 @@ public class TeslaAbout extends SettingsPreferenceFragment implements
 
         private static final String LOG_TAG = "TeslaAbout";
         private static final String KEY_GZROMS_APP = "gzRomsApp";
+        private static final String KEY_FEATURE_LIST  = "feature-list";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
