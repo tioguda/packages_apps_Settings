@@ -47,12 +47,6 @@
 	        android:data="https://plus.google.com/communities/109330559573276360638" />
 	</PreferenceScreen>
 
-	<PreferenceScreen android:title="Website">
-	    <intent
-	        android:action="android.intent.action.VIEW"
-	        android:data="http://validusrom.com/" />
-	</PreferenceScreen>
-
 		<!-- Developers -->
         <PreferenceCategory
             android:key="category_tesla_developers"
