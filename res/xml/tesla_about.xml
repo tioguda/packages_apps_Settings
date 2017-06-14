@@ -30,7 +30,11 @@
         <PreferenceScreen 
          	android:key="translator"
          	android:title="@string/changelog_tesla_title"
-         	android:fragment="com.android.settings.tesla.Changelog" />
+                android:summary="ROM latest changes, know what you get!" >
+               <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://raw.githubusercontent.com/TeslaRom-N/vendor_tesla/n7.1.2/Changelog_Tesla.txt" />
+        </PreferenceScreen>
 
         <!-- Feature-List -->
         <PreferenceScreen
