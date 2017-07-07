@@ -22,10 +22,34 @@
                           android:enabled="false"
                           android:layout="@layout/tesla_logo_row" />
 
+        <!-- Feature-List -->
         <PreferenceScreen
-               android:key="about_tesla"
-               android:fragment="com.android.settings.tesla.TeslaAbout"
-               android:title="@string/tesla_menu_about" />
+               android:key="feature-list"
+               android:title="Features at-a-glance">
+               <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://raw.githubusercontent.com/TeslaRom-N/Feature-List/master/README.md" />
+        </PreferenceScreen>
+
+        <!-- GZRomsApp -->
+        <PreferenceScreen
+               android:key="gzRomsApp"
+               android:title="@string/gzroms_app_title">
+               <intent
+                       android:action="android.intent.action.MAIN"
+                       android:targetPackage="com.jerrica.GZRoms"
+                       android:targetClass="com.jerrica.GZRoms.MainActivity" />
+        </PreferenceScreen>
+
+	<!-- Changelog -->
+        <PreferenceScreen
+          android:key="translator"
+          android:title="@string/changelog_tesla_title"
+                android:summary="ROM latest changes, know what you get!" >
+               <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://raw.githubusercontent.com/TeslaRom-N/vendor_tesla/n7.1.2/Changelog_Tesla.txt" />
+        </PreferenceScreen>
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
